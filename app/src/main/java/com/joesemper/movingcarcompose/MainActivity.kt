@@ -5,9 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import com.joesemper.movingcarcompose.ui.compose.AnimatableExample
 import com.joesemper.movingcarcompose.ui.theme.MovingCarComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -16,7 +14,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MovingCarComposeTheme {
                 Surface(color = MaterialTheme.colors.background) {
-
+                    AnimatableExample()
                 }
             }
         }
